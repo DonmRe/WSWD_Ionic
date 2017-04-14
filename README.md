@@ -16,7 +16,7 @@
 
 ![new wireframe](http://i.imgur.com/rF4xk2d.png)
 
-![sad jim](https://media.giphy.com/media/bjfv14wZU7PiM/giphy.gif)
+![sad](https://media.giphy.com/media/bjfv14wZU7PiM/giphy.gif)
 
 ![new wireframe](http://i.imgur.com/iQUSunt.png)
 
