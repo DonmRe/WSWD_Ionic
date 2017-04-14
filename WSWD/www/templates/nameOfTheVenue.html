@@ -8,7 +8,8 @@
       </div>
       <div class="item item-body" id="nameOfTheVenue-list-item-container3">
         <div id="nameOfTheVenue-markdown4" class="show-list-numbers-and-dots">
-          <p style="margin-top:0px;color:#000000;">{{venue.url}}</p>
+        <p><span text-color='red'>Category | </span> {{venue.categories[0].title}}</p>
+        <p> <span color='red'>Address | </span>{{venue.location.display_address[0]}}, {{venue.location.display_address[1]}}</p>
         </div>
       </div>
     </div>
