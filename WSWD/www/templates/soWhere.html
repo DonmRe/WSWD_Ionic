@@ -1,10 +1,11 @@
 <ion-view title="So, Where?" id="page11" style="background-color:#000808;">
   <ion-content padding="true" class="has-header">
-    <form id="soWhere-form5" class="list">
+    <!-- ng-controller="soWhereCtrl" -->
+    <form id="soWhere-form5" class="list" ng-submit="search()">
       <div class="spacer" style="height: 100px;"></div>
       <label class="item item-select" id="soWhere-select2">
-        <span class="input-label">Which rhythm</span>
-        <select>
+        <span class="input-label" name="rhythm">What's your rhythm?</span>
+        <select ng-model="searchParams.rhythm">
           <option></option>
           <option>Tango</option>
           <option>Salsa</option>
@@ -15,10 +16,11 @@
         </select>
       </label>
       <label class="item item-input" id="soWhere-input13">
-        <span class="input-label">Zip Code</span>
-        <input type="number" placeholder="">
+        <span class="input-label" name="zip">Zip Code</span>
+        <input type="number" placeholder="90401" ng-model="searchParams.zipCode">
       </label>
+      <button id="soWhere-button12" class="button button-stable button-block">Search</button>
     </form>
-    <a ui-sref="logged.hereAreYourTopResults" id="soWhere-button12" class="button button-stable  button-block">Search</a>
   </ion-content>
 </ion-view>
+<!-- ui-sref="logged.hereAreYourTopResults"  -->

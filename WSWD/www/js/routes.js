@@ -7,10 +7,10 @@ angular.module('app.routes', ['ionicUIRouter'])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
 
-      .state('logged', {
+
+
+    .state('logged', {
     url: '/page1',
     templateUrl: 'templates/logged.html',
     abstract:true
@@ -28,7 +28,7 @@ angular.module('app.routes', ['ionicUIRouter'])
     controller: 'loginCtrl'
   })
 
-  /* 
+  /*
     The IonicUIRouter.js UI-Router Modification is being used for this route.
     To navigate to this route, do NOT use a URL. Instead use one of the following:
       1) Using the ui-sref HTML attribute:
@@ -65,7 +65,7 @@ angular.module('app.routes', ['ionicUIRouter'])
     }
   })
 
-  /* 
+  /*
     The IonicUIRouter.js UI-Router Modification is being used for this route.
     To navigate to this route, do NOT use a URL. Instead use one of the following:
       1) Using the ui-sref HTML attribute:
@@ -114,7 +114,8 @@ angular.module('app.routes', ['ionicUIRouter'])
         templateUrl: 'templates/hereAreYourTopResults.html',
         controller: 'hereAreYourTopResultsCtrl'
       }
-    }
+    },
+     params : {venues: null}
   })
 
   .state('logged.nameOfTheVenue', {
@@ -124,8 +125,12 @@ angular.module('app.routes', ['ionicUIRouter'])
         templateUrl: 'templates/nameOfTheVenue.html',
         controller: 'nameOfTheVenueCtrl'
       }
-    }
+    },
+    params : {venue: null}
   })
+
+
+
 
   .state('logged.venueDetails', {
     url: '/page14',
@@ -137,7 +142,7 @@ angular.module('app.routes', ['ionicUIRouter'])
     }
   })
 
-  /* 
+  /*
     The IonicUIRouter.js UI-Router Modification is being used for this route.
     To navigate to this route, do NOT use a URL. Instead use one of the following:
       1) Using the ui-sref HTML attribute:
@@ -166,6 +171,6 @@ angular.module('app.routes', ['ionicUIRouter'])
 
 $urlRouterProvider.otherwise('/page1/tab5/page8')
 
-  
+
 
 });
